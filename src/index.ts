@@ -1,5 +1,5 @@
 import { ViteDevServer } from 'vite';
-export default function genezio() {
+export default function genezioLocalSDKReload() {
 	let ignorePattern = `/node_modules\\/(?!@genezio-sdk/*).*/`;
 	let pattern = `/node_modules\\/(@genezio-sdk/*).*/package.json`;
 	return {
