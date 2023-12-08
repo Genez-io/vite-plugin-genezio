@@ -8,11 +8,11 @@ This plugin ensures that your development environment remains up-to-date with an
 ```js
 // vite.config.js
 import { defineConfig } from 'vite'
-import genezio from '@genezio/vite-plugin-genezio'
+import genezioLocalSDKReload from '@genezio/vite-plugin-genezio'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [genezio()],
+  plugins: [genezioLocalSDKReload()],
 })
 ```
 
