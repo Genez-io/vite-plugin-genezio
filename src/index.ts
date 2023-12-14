@@ -10,7 +10,14 @@ export default function genezioLocalSDKReload() {
         persistent: true,
       });
 
-      watcher.on("change", (filePath: string) => server.restart(true));
+      watcher.on("change", (filePath: string) => {
+        const filePathComponents = filePath.split(path.sep);
+        if (
+          filePathComponents[filePathComponents.length - 1] == "package.json"
+        ) {
+          server.restart(true);
+        }
+      });
     },
   };
 }
