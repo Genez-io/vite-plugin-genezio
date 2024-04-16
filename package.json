@@ -1,6 +1,6 @@
 {
   "name": "@genezio/vite-plugin-genezio",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple vite plugin for genezio that watches if the genezio SDK was overwritten and reload the vite dev server.",
   "type": "module",
   "main": "dist/index.cjs",
@@ -36,5 +36,8 @@
   },
   "peerDependencies": {
     "vite": "^4.0.0 || ^5.0.0"
+  },
+  "prettier": {
+    "tabWidth": 2
   }
 }
