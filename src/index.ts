@@ -7,9 +7,7 @@ let viteServer: ViteDevServer|undefined;
 
 function watchAndRestart(server: ViteDevServer) {
     viteServer = server;
-    if (watcher) {
-        return
-    }
+    if (watcher) return
     const directoryToWatch = path.join(".", "node_modules", "@genezio-sdk");
     watcher = chokidar.watch(directoryToWatch, {
       persistent: true,
